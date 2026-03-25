@@ -49,13 +49,13 @@
         <div class="container">
             <div class="hero-content">
                 <h1>你好，我是<span class="title">谢云龙</span></h1>
-                <p id="hero-description">全栈开发工程师 / 前端架构师</p>
+                <p id="hero-description">信息安全高级工程师 | 网络安全专家</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-folder-open"></i>
                         查看项目
                     </a>
-                    <a href="resume/谢云龙_2025.pdf" class="btn btn-secondary" target="_blank">
+                    <a id="resumeDownload" href="" class="btn btn-secondary" target="_blank">
                         <i class="fas fa-download"></i>
                         下载简历
                     </a>
@@ -75,16 +75,16 @@
                 <div class="about-text">
                     <h2>热爱技术，追求卓越</h2>
                     <p id="about-description">
-                        我是一个热爱技术、追求卓越的开发者。拥有多年的Web开发经验，专注于构建高质量、高性能的应用程序。我相信技术能够改变世界，并且致力于通过我的工作创造积极的影响。
+                        我是一名具备4年信息安全经验的专业人员，拥有从0到1的信息安全体系设计建设经验，主导了隆基反入侵多层纵深体系建设。
                     </p>
-                    <p>在工作中，我注重代码质量和架构设计，喜欢学习新技术并将其应用到实际项目中。我相信团队协作的力量，并且擅长与不同背景的人合作。</p>
+                    <p>具备AI驱动的信息安全场景实际落地经验，主导建设多智能体安全运营系统，熟用VibeCoding。我注重业务价值，能挖掘信息安全在实际业务中的价值和应用场景。</p>
                     <div class="skills-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">安全体系建设</span>
+                        <span class="skill-tag">反入侵防御</span>
+                        <span class="skill-tag">AI安全</span>
+                        <span class="skill-tag">SOC</span>
+                        <span class="skill-tag">EDR/WAF</span>
+                        <span class="skill-tag">IAM/IDM</span>
                     </div>
                 </div>
                 <div class="about-image">
@@ -138,12 +138,12 @@
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <h3>邮箱</h3>
-                        <p>example@example.com</p>
+                        <p>secxie@foxmail.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>位置</h3>
-                        <p>中国 · 北京</p>
+                        <p>中国 · 深圳</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-globe"></i>
@@ -188,108 +188,99 @@
             return {
                 personal: {
                     name: "谢云龙",
-                    title: "全栈开发工程师 / 前端架构师",
-                    description: "热爱技术，专注于构建优秀的用户体验和高性能的Web应用。"
+                    title: "信息安全高级工程师 | 网络安全专家",
+                    description: "4年信息安全经验,具备从0到1的安全体系建设能力,主导AI驱动的安全运营系统建设。",
+                    resumePdf: "resume/谢云龙_2025.pdf"
                 },
                 social: [
                     { name: "GitHub", url: "https://github.com/xyl-muse", icon: "fab fa-github" },
-                    { name: "LinkedIn", url: "https://linkedin.com/in/xyl-muse", icon: "fab fa-linkedin" },
-                    { name: "Email", url: "mailto:example@example.com", icon: "fas fa-envelope" }
+                    { name: "Email", url: "mailto:secxie@foxmail.com", icon: "fas fa-envelope" }
                 ],
                 skills: [
                     {
-                        name: "前端开发",
+                        name: "信息安全专业技能",
                         items: [
-                            { name: "HTML5", level: 95 },
-                            { name: "CSS3", level: 90 },
-                            { name: "JavaScript", level: 95 },
-                            { name: "TypeScript", level: 90 },
-                            { name: "React", level: 95 },
-                            { name: "Vue.js", level: 90 },
-                            { name: "Next.js", level: 85 },
-                            { name: "Tailwind CSS", level: 95 }
+                            {"name": "安全体系建设", "level": 95},
+                            {"name": "反入侵防御", "level": 92},
+                            {"name": "AI安全", "level": 90},
+                            {"name": "SOC建设", "level": 88},
+                            {"name": "EDR/WAF/NDR", "level": 93},
+                            {"name": "IAM/IDM", "level": 90},
+                            {"name": "DLP", "level": 85},
+                            {"name": "渗透测试", "level": 88}
                         ]
                     },
                     {
-                        name: "后端开发",
+                        name: "技术工具",
                         items: [
-                            { name: "Node.js", level: 85 },
-                            { name: "Express", level: 85 },
-                            { name: "Python", level: 80 },
-                            { name: "MySQL", level: 80 },
-                            { name: "MongoDB", level: 80 }
+                            {"name": "VibeCoding", "level": 90},
+                            {"name": "LangChain", "level": 85},
+                            {"name": "FastAPI", "level": 88},
+                            {"name": "React", "level": 85},
+                            {"name": "SQLite", "level": 82},
+                            {"name": "Python", "level": 90},
+                            {"name": "C语言", "level": 85},
+                            {"name": "Wireshark", "level": 80}
                         ]
                     },
                     {
-                        name: "工具与其他",
+                        name: "综合能力",
                         items: [
-                            { name: "Git", level: 95 },
-                            { name: "Docker", level: 80 },
-                            { name: "Linux", level: 85 },
-                            { name: "Webpack", level: 85 },
-                            { name: "Vite", level: 90 }
+                            {"name": "项目管理", "level": 92},
+                            {"name": "业务沟通", "level": 95},
+                            {"name": "团队协作", "level": 93},
+                            {"name": "学习能力", "level": 94},
+                            {"name": "问题分析", "level": 91},
+                            {"name": "抗压能力", "level": 92}
                         ]
                     }
                 ],
                 projects: [
                     {
                         id: 1,
-                        title: "电商平台",
-                        description: "一个现代化的电商平台，包含完整的购物流程、支付系统和后台管理。",
-                        tech: ["React", "Node.js", "MongoDB", "Express"],
-                        image: "assets/images/projects/ecommerce.jpg",
-                        github: "https://github.com/xyl-muse/ecommerce-platform",
-                        demo: "https://demo.ecommerce.com"
+                        title: "集团反入侵能力建设及运营",
+                        description: "架构集团多层纵深防御体系,建设运营WAF/NDR/DLP/EDR/SEG/SOC/CAASM等安全组件。",
+                        tech: ["SOC", "EDR", "WAF", "NDR", "DLP"],
+                        image: "assets/images/projects/security-architecture.jpg",
+                        github: "",
+                        demo: ""
                     },
                     {
                         id: 2,
-                        title: "任务管理系统",
-                        description: "团队协作任务管理系统，支持实时通信和进度追踪。",
-                        tech: ["Vue.js", "Socket.io", "Python", "Flask"],
-                        image: "assets/images/projects/task-manager.jpg",
-                        github: "https://github.com/xyl-muse/task-manager",
-                        demo: "https://demo.taskmanager.com"
+                        title: "Metis智能知识采集与分析系统",
+                        description: "设计开发多智能体协作的AI知识采集平台,实现15+数据源的自动化内容捕获、筛选和分析。",
+                        tech: ["FastAPI", "React", "SQLite", "LangChain", "LLM"],
+                        image: "assets/images/projects/metis-system.jpg",
+                        github: "https://github.com/xyl-muse/metis-knowledge-system",
+                        demo: ""
                     },
                     {
                         id: 3,
-                        title: "数据分析仪表板",
-                        description: "可视化数据分析平台，支持多种图表类型和数据导入导出。",
-                        tech: ["React", "D3.js", "Node.js", "PostgreSQL"],
-                        image: "assets/images/projects/dashboard.jpg",
-                        github: "https://github.com/xyl-muse/data-dashboard",
-                        demo: "https://demo.dashboard.com"
+                        title: "智能安全运营中心项目(AI-SOC)",
+                        description: "建设AI驱动的安全运营中心,实现告警降噪、自动化处置,降噪率达83.64%。",
+                        tech: ["AI-SOC", "智能体工程", "数据可视化"],
+                        image: "assets/images/projects/ai-soc.jpg",
+                        github: "",
+                        demo: ""
                     }
                 ],
                 experience: [
                     {
                         id: 1,
-                        company: "科技公司A",
-                        position: "高级前端开发工程师",
-                        period: "2022年至今",
-                        description: "负责公司核心产品的前端架构设计和开发，优化性能和用户体验。",
+                        company: "隆基绿能科技股份有限公司",
+                        position: "信息安全高级工程师",
+                        period: "2022.07 至今",
+                        description: "主导集团信息安全反入侵体系建设运营,重点参与工控业务场景的安全需求挖掘及落地。",
                         achievements: [
-                            "重构前端架构，提升加载速度40%",
-                            "主导React技术栈升级，引入TypeScript",
-                            "设计并实现组件库，提高开发效率60%",
-                            "指导团队成员成长，推动技术分享"
-                        ]
-                    },
-                    {
-                        id: 2,
-                        company: "互联网公司B",
-                        position: "前端开发工程师",
-                        period: "2020-2022年",
-                        description: "参与多个重要项目的前端开发，负责页面实现和优化。",
-                        achievements: [
-                            "负责电商平台前端开发，日均访问量超100万",
-                            "优化移动端响应式设计，提高用户满意度",
-                            "开发可视化图表组件，支持业务数据分析",
-                            "修复关键性能问题，减少页面加载时间"
+                            "连续4个考核周期绩效均为杰出(1级)",
+                            "个人获集团《2023年度数字化之星》",
+                            "主导反入侵团队获《中心2024年度体系能力建设先锋奖》",
+                            "帮助公司降本增效和规避损失超百万"
                         ]
                     }
                 ],
                 about: {
-                    description: "我是一个热爱技术、追求卓越的开发者。拥有多年的Web开发经验，专注于构建高质量、高性能的应用程序。"
+                    description: "我是一名具备4年信息安全经验的专业人员,拥有从0到1的信息安全体系设计建设经验,主导了隆基反入侵多层纵深体系建设。"
                 }
             };
         }
@@ -300,11 +291,21 @@
             renderSkills();
             renderProjects();
             renderExperience();
+            renderResumeDownload();
 
             // 初始化其他功能
             initThemeToggle();
             initScrollAnimations();
             initSmoothScroll();
+        }
+
+        // 渲染简历下载链接
+        function renderResumeDownload() {
+            const downloadLink = document.getElementById('resumeDownload');
+            if (!downloadLink) return;
+
+            const resumePath = contentData.personal?.resumePdf || 'resume/谢云龙_2025.pdf';
+            downloadLink.href = resumePath;
         }
 
         // 渲染社交链接

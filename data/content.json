@@ -1,11 +1,13 @@
 {
   "personal": {
     "name": "谢云龙",
-    "title": "全栈开发工程师 / 前端架构师",
-    "description": "热爱技术，专注于构建优秀的用户体验和高性能的Web应用。拥有丰富的前端开发经验，擅长React、Vue等现代前端框架，同时熟悉后端开发和系统架构。",
-    "email": "example@example.com",
-    "location": "中国 · 北京",
-    "avatar": "assets/images/profile.jpg"
+    "title": "信息安全高级工程师 | 网络安全专家",
+    "description": "4年信息安全经验,具备从0到1的安全体系建设能力,主导AI驱动的安全运营系统建设,擅长反入侵防御、身份管理和安全架构设计。",
+    "email": "galoisfield22@gmail.com",
+    "phone": "15691946170",
+    "location": "中国 · 深圳",
+    "avatar": "assets/images/profile.jpg",
+    "resumePdf": "resume/谢云龙_2025.pdf"
   },
   "social": [
     {
@@ -14,142 +16,137 @@
       "icon": "fab fa-github"
     },
     {
-      "name": "LinkedIn",
-      "url": "https://linkedin.com/in/xyl-muse",
-      "icon": "fab fa-linkedin"
-    },
-    {
       "name": "Email",
-      "url": "mailto:example@example.com",
+      "url": "mailto:galoisfield22@gmail.com",
       "icon": "fas fa-envelope"
     }
   ],
   "skills": [
     {
-      "name": "前端开发",
+      "name": "信息安全专业技能",
       "items": [
-        {"name": "HTML5", "level": 95},
-        {"name": "CSS3", "level": 90},
-        {"name": "JavaScript", "level": 95},
-        {"name": "TypeScript", "level": 90},
-        {"name": "React", "level": 95},
-        {"name": "Vue.js", "level": 90},
-        {"name": "Next.js", "level": 85},
-        {"name": "Tailwind CSS", "level": 95}
+        {"name": "安全体系建设", "level": 95},
+        {"name": "反入侵防御", "level": 92},
+        {"name": "AI安全", "level": 90},
+        {"name": "SOC建设", "level": 88},
+        {"name": "EDR/WAF/NDR", "level": 93},
+        {"name": "IAM/IDM", "level": 90},
+        {"name": "DLP", "level": 85},
+        {"name": "渗透测试", "level": 88}
       ]
     },
     {
-      "name": "后端开发",
+      "name": "技术工具",
       "items": [
-        {"name": "Node.js", "level": 85},
-        {"name": "Express", "level": 85},
-        {"name": "Python", "level": 80},
-        {"name": "Flask", "level": 75},
-        {"name": "MySQL", "level": 80},
-        {"name": "MongoDB", "level": 80}
+        {"name": "VibeCoding", "level": 90},
+        {"name": "LangChain", "level": 85},
+        {"name": "FastAPI", "level": 88},
+        {"name": "React", "level": 85},
+        {"name": "SQLite", "level": 82},
+        {"name": "Python", "level": 90},
+        {"name": "C语言", "level": 85},
+        {"name": "Wireshark", "level": 80}
       ]
     },
     {
-      "name": "工具与其他",
+      "name": "综合能力",
       "items": [
-        {"name": "Git", "level": 95},
-        {"name": "Docker", "level": 80},
-        {"name": "AWS", "level": 75},
-        {"name": "Linux", "level": 85},
-        {"name": "Webpack", "level": 85},
-        {"name": "Vite", "level": 90}
+        {"name": "项目管理", "level": 92},
+        {"name": "业务沟通", "level": 95},
+        {"name": "团队协作", "level": 93},
+        {"name": "学习能力", "level": 94},
+        {"name": "问题分析", "level": 91},
+        {"name": "抗压能力", "level": 92}
       ]
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "电商平台",
-      "description": "一个现代化的电商平台，包含完整的购物流程、支付系统和后台管理。",
-      "tech": ["React", "Node.js", "MongoDB", "Express"],
-      "image": "assets/images/projects/ecommerce.jpg",
-      "github": "https://github.com/xyl-muse/ecommerce-platform",
-      "demo": "https://demo.ecommerce.com"
+      "title": "集团反入侵能力建设及运营",
+      "description": "架构集团多层纵深防御体系,建设运营WAF/NDR/DLP/EDR/SEG/SOC/CAASM等安全组件,成功中断十余次鱼叉攻击,避免项目货款损失超亿元。",
+      "tech": ["SOC", "EDR", "WAF", "NDR", "DLP"],
+      "image": "assets/images/projects/security-architecture.jpg",
+      "github": "",
+      "demo": ""
     },
     {
       "id": 2,
-      "title": "任务管理系统",
-      "description": "团队协作任务管理系统，支持实时通信和进度追踪。",
-      "tech": ["Vue.js", "Socket.io", "Python", "Flask"],
-      "image": "assets/images/projects/task-manager.jpg",
-      "github": "https://github.com/xyl-muse/task-manager",
-      "demo": "https://demo.taskmanager.com"
+      "title": "Metis智能知识采集与分析系统",
+      "description": "设计开发多智能体协作的AI知识采集平台,通过LangChain编排3个LLM智能体,实现arXiv、freebuf等15+数据源的自动化内容捕获、筛选和分析。",
+      "tech": ["FastAPI", "React", "SQLite", "LangChain", "LLM"],
+      "image": "assets/images/projects/metis-system.jpg",
+      "github": "https://github.com/xyl-muse/metis-knowledge-system",
+      "demo": ""
     },
     {
       "id": 3,
-      "title": "数据分析仪表板",
-      "description": "可视化数据分析平台，支持多种图表类型和数据导入导出。",
-      "tech": ["React", "D3.js", "Node.js", "PostgreSQL"],
-      "image": "assets/images/projects/dashboard.jpg",
-      "github": "https://github.com/xyl-muse/data-dashboard",
-      "demo": "https://demo.dashboard.com"
+      "title": "智能安全运营中心项目(AI-SOC)",
+      "description": "建设AI驱动的安全运营中心,使用智能体技术实现告警降噪、自动化处置,降噪率达83.64%,处置率升至100%,MTTR降至2小时。",
+      "tech": ["AI-SOC", "智能体工程", "数据可视化"],
+      "image": "assets/images/projects/ai-soc.jpg",
+      "github": "",
+      "demo": ""
     },
     {
       "id": 4,
-      "title": "AI聊天助手",
-      "description": "基于OpenAI API的智能聊天助手，支持多语言和知识库管理。",
-      "tech": ["Next.js", "OpenAI API", "MongoDB", "Tailwind CSS"],
-      "image": "assets/images/projects/ai-chat.jpg",
-      "github": "https://github.com/xyl-muse/ai-chat-assistant",
-      "demo": "https://demo.ai-chat.com"
+      "title": "集团身份管理体系优化(IDM)",
+      "description": "优化公司身份系统,清理僵尸账号,规范账号管理流程,关停违规账号1898个,新增账号合规率达97.96%,成功更新账号管理体系。",
+      "tech": ["IDM", "身份管理", "数据治理"],
+      "image": "assets/images/projects/idm-optimization.jpg",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": 5,
+      "title": "统一权限项目-系统权限治理(IAM)",
+      "description": "重构应用系统权限结构,实现基于功能+数据的ABAC权限模型,权限申请时长下降68.40%,单位时效提升317%,超时率下降77.38%。",
+      "tech": ["IAM", "ABAC", "权限治理"],
+      "image": "assets/images/projects/iam-system.jpg",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": 6,
+      "title": "电池制造中心外来人员定位",
+      "description": "建设UWB定位+摄像头联动的人员动线管理体系,严格控制实验车间人员动线,当年降低实验室保密成本90万元/月度。",
+      "tech": ["UWB定位", "摄像头联动", "保密管理"],
+      "image": "assets/images/projects/personnel-location.jpg",
+      "github": "",
+      "demo": ""
     }
   ],
   "experience": [
     {
       "id": 1,
-      "company": "科技公司A",
-      "position": "高级前端开发工程师",
-      "period": "2022年至今",
-      "description": "负责公司核心产品的前端架构设计和开发，优化性能和用户体验。",
+      "company": "隆基绿能科技股份有限公司",
+      "position": "信息安全高级工程师",
+      "period": "2022.07 至今",
+      "description": "主导集团信息安全反入侵体系建设运营,重点参与工控业务场景的安全需求挖掘及落地,负责多层纵深防御体系搭建、AI安全应用落地和安全运营。",
       "achievements": [
-        "重构前端架构，提升加载速度40%",
-        "主导React技术栈升级，引入TypeScript",
-        "设计并实现组件库，提高开发效率60%",
-        "指导团队成员成长，推动技术分享"
-      ]
-    },
-    {
-      "id": 2,
-      "company": "互联网公司B",
-      "position": "前端开发工程师",
-      "period": "2020-2022年",
-      "description": "参与多个重要项目的前端开发，负责页面实现和优化。",
-      "achievements": [
-        "负责电商平台前端开发，日均访问量超100万",
-        "优化移动端响应式设计，提高用户满意度",
-        "开发可视化图表组件，支持业务数据分析",
-        "修复关键性能问题，减少页面加载时间"
-      ]
-    },
-    {
-      "id": 3,
-      "company": "创业公司C",
-      "position": "全栈开发工程师",
-      "period": "2018-2020年",
-      "description": "负责产品开发的全流程，从需求分析到上线运维。",
-      "achievements": [
-        "独立完成多个产品的前端和后端开发",
-        "设计RESTful API，优化数据库结构",
-        "部署和维护生产环境服务器",
-        "负责用户反馈处理和产品迭代"
+        "定级后连续4个考核周期(2年)绩效均为杰出(1级)",
+        "个人获集团《2023年度数字化之星》",
+        "作为项目经理,获《集团2023年度优秀数字化项目三等奖》等多个奖项",
+        "主导反入侵团队获《中心2024年度体系能力建设先锋奖》",
+        "重点参与信息安全智能化建设团队获《中心2025年度担当有为奖》",
+        "在业务领域帮助公司降本增效和规避损失,直接规避金额超百万"
       ]
     }
   ],
   "education": [
     {
       "id": 1,
-      "school": "某大学",
-      "degree": "计算机科学与技术",
-      "major": "本科",
+      "school": "西安电子科技大学",
+      "degree": "本科",
+      "major": "信息安全",
       "period": "2014-2018年"
     }
   ],
+  "certifications": [
+    "CISP-PTE",
+    "ISO27001内审员"
+  ],
   "about": {
-    "description": "我是一个热爱技术、追求卓越的开发者。拥有多年的Web开发经验，专注于构建高质量、高性能的应用程序。我相信技术能够改变世界，并且致力于通过我的工作创造积极的影响。\n\n在工作中，我注重代码质量和架构设计，喜欢学习新技术并将其应用到实际项目中。我相信团队协作的力量，并且擅长与不同背景的人合作。\n\n我的兴趣爱好包括开源项目贡献、技术分享、健身和阅读。我希望通过不断学习和实践，成为一个更优秀的工程师。"
+    "description": "我是一名具备4年信息安全经验的专业人员,拥有从0到1的信息安全体系设计建设经验,主导了隆基反入侵多层纵深体系建设。具备AI驱动的信息安全场景实际落地经验,主导建设多智能体安全运营系统,熟用VibeCoding。\n\n我具备扎实的信息安全知识体系,科班出身,基础理论知识和工程化实践并重;同时具备前沿的AI安全体系知识,如prompt injection、jailbreak等。\n\n在工作中,我注重业务价值,具备清晰的业务视角和深入业务的热情,能挖掘信息安全在实际业务中的价值和应用场景。我具备积极主动的沟通协作态度,逻辑能力强,情绪稳定,乐观开朗能抗压。\n\n我热爱学习新技术,有自驱力和进取心,积极拥抱新知识新技术。我的兴趣爱好包括技术研究、AI应用探索和运动。我希望通过不断学习和实践,在信息安全领域创造更大的价值。"
   }
 }

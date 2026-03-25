@@ -63,5 +63,7 @@ coverage/
 Thumbs.db
 .DS_Store
 
-# resume files (except resume)
-resume
+# resume temporary files
+resume/*.tmp
+resume/*.temp
+resume/*.md
