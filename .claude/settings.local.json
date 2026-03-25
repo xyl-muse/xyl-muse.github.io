@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"E:\\\\Study\\\\resume\\\\xyl-muse.github.io\" && python -m http.server 8000)",
+      "Bash(curl -I \"http://localhost:8000\")"
+    ]
+  }
+}

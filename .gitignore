@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.min.css
+*.min.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache
+.cache/
+.temp/
+.tmp/
+
+# Coverage
+coverage/
+*.lcov
+
+# Testing
+*.spec.js
+*.test.js
+
+# Misc
+*.swp
+*.swo
+*~
+*.bak
+*.backup
+
+# System files
+Thumbs.db
+.DS_Store
+
+# resume files (except resume)
+resume

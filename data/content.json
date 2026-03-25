@@ -1,0 +1,155 @@
+{
+  "personal": {
+    "name": "谢云龙",
+    "title": "全栈开发工程师 / 前端架构师",
+    "description": "热爱技术，专注于构建优秀的用户体验和高性能的Web应用。拥有丰富的前端开发经验，擅长React、Vue等现代前端框架，同时熟悉后端开发和系统架构。",
+    "email": "example@example.com",
+    "location": "中国 · 北京",
+    "avatar": "assets/images/profile.jpg"
+  },
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/xyl-muse",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/xyl-muse",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:example@example.com",
+      "icon": "fas fa-envelope"
+    }
+  ],
+  "skills": [
+    {
+      "name": "前端开发",
+      "items": [
+        {"name": "HTML5", "level": 95},
+        {"name": "CSS3", "level": 90},
+        {"name": "JavaScript", "level": 95},
+        {"name": "TypeScript", "level": 90},
+        {"name": "React", "level": 95},
+        {"name": "Vue.js", "level": 90},
+        {"name": "Next.js", "level": 85},
+        {"name": "Tailwind CSS", "level": 95}
+      ]
+    },
+    {
+      "name": "后端开发",
+      "items": [
+        {"name": "Node.js", "level": 85},
+        {"name": "Express", "level": 85},
+        {"name": "Python", "level": 80},
+        {"name": "Flask", "level": 75},
+        {"name": "MySQL", "level": 80},
+        {"name": "MongoDB", "level": 80}
+      ]
+    },
+    {
+      "name": "工具与其他",
+      "items": [
+        {"name": "Git", "level": 95},
+        {"name": "Docker", "level": 80},
+        {"name": "AWS", "level": 75},
+        {"name": "Linux", "level": 85},
+        {"name": "Webpack", "level": 85},
+        {"name": "Vite", "level": 90}
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "电商平台",
+      "description": "一个现代化的电商平台，包含完整的购物流程、支付系统和后台管理。",
+      "tech": ["React", "Node.js", "MongoDB", "Express"],
+      "image": "assets/images/projects/ecommerce.jpg",
+      "github": "https://github.com/xyl-muse/ecommerce-platform",
+      "demo": "https://demo.ecommerce.com"
+    },
+    {
+      "id": 2,
+      "title": "任务管理系统",
+      "description": "团队协作任务管理系统，支持实时通信和进度追踪。",
+      "tech": ["Vue.js", "Socket.io", "Python", "Flask"],
+      "image": "assets/images/projects/task-manager.jpg",
+      "github": "https://github.com/xyl-muse/task-manager",
+      "demo": "https://demo.taskmanager.com"
+    },
+    {
+      "id": 3,
+      "title": "数据分析仪表板",
+      "description": "可视化数据分析平台，支持多种图表类型和数据导入导出。",
+      "tech": ["React", "D3.js", "Node.js", "PostgreSQL"],
+      "image": "assets/images/projects/dashboard.jpg",
+      "github": "https://github.com/xyl-muse/data-dashboard",
+      "demo": "https://demo.dashboard.com"
+    },
+    {
+      "id": 4,
+      "title": "AI聊天助手",
+      "description": "基于OpenAI API的智能聊天助手，支持多语言和知识库管理。",
+      "tech": ["Next.js", "OpenAI API", "MongoDB", "Tailwind CSS"],
+      "image": "assets/images/projects/ai-chat.jpg",
+      "github": "https://github.com/xyl-muse/ai-chat-assistant",
+      "demo": "https://demo.ai-chat.com"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "科技公司A",
+      "position": "高级前端开发工程师",
+      "period": "2022年至今",
+      "description": "负责公司核心产品的前端架构设计和开发，优化性能和用户体验。",
+      "achievements": [
+        "重构前端架构，提升加载速度40%",
+        "主导React技术栈升级，引入TypeScript",
+        "设计并实现组件库，提高开发效率60%",
+        "指导团队成员成长，推动技术分享"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "互联网公司B",
+      "position": "前端开发工程师",
+      "period": "2020-2022年",
+      "description": "参与多个重要项目的前端开发，负责页面实现和优化。",
+      "achievements": [
+        "负责电商平台前端开发，日均访问量超100万",
+        "优化移动端响应式设计，提高用户满意度",
+        "开发可视化图表组件，支持业务数据分析",
+        "修复关键性能问题，减少页面加载时间"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "创业公司C",
+      "position": "全栈开发工程师",
+      "period": "2018-2020年",
+      "description": "负责产品开发的全流程，从需求分析到上线运维。",
+      "achievements": [
+        "独立完成多个产品的前端和后端开发",
+        "设计RESTful API，优化数据库结构",
+        "部署和维护生产环境服务器",
+        "负责用户反馈处理和产品迭代"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "school": "某大学",
+      "degree": "计算机科学与技术",
+      "major": "本科",
+      "period": "2014-2018年"
+    }
+  ],
+  "about": {
+    "description": "我是一个热爱技术、追求卓越的开发者。拥有多年的Web开发经验，专注于构建高质量、高性能的应用程序。我相信技术能够改变世界，并且致力于通过我的工作创造积极的影响。\n\n在工作中，我注重代码质量和架构设计，喜欢学习新技术并将其应用到实际项目中。我相信团队协作的力量，并且擅长与不同背景的人合作。\n\n我的兴趣爱好包括开源项目贡献、技术分享、健身和阅读。我希望通过不断学习和实践，成为一个更优秀的工程师。"
+  }
+}

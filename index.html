@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="谢云龙 - 全栈开发工程师，专注于构建优秀的用户体验和高性能的Web应用">
+    <meta name="keywords" content="全栈开发,前端开发,React,Vue,JavaScript,Node.js">
+    <meta name="author" content="谢云龙">
+    <title>谢云龙 | 全栈开发工程师</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="谢云龙 | 全栈开发工程师">
+    <meta property="og:description" content="热爱技术，专注于构建优秀的用户体验和高性能的Web应用">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xyl-muse.github.io">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">XYL</a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#experience">经历</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>你好，我是<span class="title">谢云龙</span></h1>
+                <p id="hero-description">全栈开发工程师 / 前端架构师</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i>
+                        查看项目
+                    </a>
+                    <a href="resume/谢云龙_2025.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        下载简历
+                    </a>
+                </div>
+                <div class="social-links" id="socialLinks">
+                    <!-- 社交链接通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>热爱技术，追求卓越</h2>
+                    <p id="about-description">
+                        我是一个热爱技术、追求卓越的开发者。拥有多年的Web开发经验，专注于构建高质量、高性能的应用程序。我相信技术能够改变世界，并且致力于通过我的工作创造积极的影响。
+                    </p>
+                    <p>在工作中，我注重代码质量和架构设计，喜欢学习新技术并将其应用到实际项目中。我相信团队协作的力量，并且擅长与不同背景的人合作。</p>
+                    <div class="skills-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">技术技能</h2>
+            <div class="skills-grid" id="skillsGrid">
+                <!-- 技能通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">精选项目</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- 项目通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">工作经历</h2>
+            <div class="timeline" id="experienceTimeline">
+                <!-- 经历通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-container">
+                <p style="color: var(--text-secondary); font-size: 1.125rem; margin-bottom: 2rem;">
+                    欢迎与我交流，无论是技术探讨、项目合作还是其他任何事情！
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>邮箱</h3>
+                        <p>example@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>位置</h3>
+                        <p>中国 · 北京</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <h3>网站</h3>
+                        <p>xyl-muse.github.io</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 谢云龙. 用 ❤️ 和代码构建</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // 从JSON文件加载数据
+        let contentData = {};
+
+        async function loadContent() {
+            try {
+                const response = await fetch('data/content.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load content');
+                }
+                contentData = await response.json();
+                initializePage();
+            } catch (error) {
+                console.error('Error loading content:', error);
+                // 使用内联数据作为后备方案
+                contentData = getFallbackData();
+                initializePage();
+            }
+        }
+
+        // 后备数据
+        function getFallbackData() {
+            return {
+                personal: {
+                    name: "谢云龙",
+                    title: "全栈开发工程师 / 前端架构师",
+                    description: "热爱技术，专注于构建优秀的用户体验和高性能的Web应用。"
+                },
+                social: [
+                    { name: "GitHub", url: "https://github.com/xyl-muse", icon: "fab fa-github" },
+                    { name: "LinkedIn", url: "https://linkedin.com/in/xyl-muse", icon: "fab fa-linkedin" },
+                    { name: "Email", url: "mailto:example@example.com", icon: "fas fa-envelope" }
+                ],
+                skills: [
+                    {
+                        name: "前端开发",
+                        items: [
+                            { name: "HTML5", level: 95 },
+                            { name: "CSS3", level: 90 },
+                            { name: "JavaScript", level: 95 },
+                            { name: "TypeScript", level: 90 },
+                            { name: "React", level: 95 },
+                            { name: "Vue.js", level: 90 },
+                            { name: "Next.js", level: 85 },
+                            { name: "Tailwind CSS", level: 95 }
+                        ]
+                    },
+                    {
+                        name: "后端开发",
+                        items: [
+                            { name: "Node.js", level: 85 },
+                            { name: "Express", level: 85 },
+                            { name: "Python", level: 80 },
+                            { name: "MySQL", level: 80 },
+                            { name: "MongoDB", level: 80 }
+                        ]
+                    },
+                    {
+                        name: "工具与其他",
+                        items: [
+                            { name: "Git", level: 95 },
+                            { name: "Docker", level: 80 },
+                            { name: "Linux", level: 85 },
+                            { name: "Webpack", level: 85 },
+                            { name: "Vite", level: 90 }
+                        ]
+                    }
+                ],
+                projects: [
+                    {
+                        id: 1,
+                        title: "电商平台",
+                        description: "一个现代化的电商平台，包含完整的购物流程、支付系统和后台管理。",
+                        tech: ["React", "Node.js", "MongoDB", "Express"],
+                        image: "assets/images/projects/ecommerce.jpg",
+                        github: "https://github.com/xyl-muse/ecommerce-platform",
+                        demo: "https://demo.ecommerce.com"
+                    },
+                    {
+                        id: 2,
+                        title: "任务管理系统",
+                        description: "团队协作任务管理系统，支持实时通信和进度追踪。",
+                        tech: ["Vue.js", "Socket.io", "Python", "Flask"],
+                        image: "assets/images/projects/task-manager.jpg",
+                        github: "https://github.com/xyl-muse/task-manager",
+                        demo: "https://demo.taskmanager.com"
+                    },
+                    {
+                        id: 3,
+                        title: "数据分析仪表板",
+                        description: "可视化数据分析平台，支持多种图表类型和数据导入导出。",
+                        tech: ["React", "D3.js", "Node.js", "PostgreSQL"],
+                        image: "assets/images/projects/dashboard.jpg",
+                        github: "https://github.com/xyl-muse/data-dashboard",
+                        demo: "https://demo.dashboard.com"
+                    }
+                ],
+                experience: [
+                    {
+                        id: 1,
+                        company: "科技公司A",
+                        position: "高级前端开发工程师",
+                        period: "2022年至今",
+                        description: "负责公司核心产品的前端架构设计和开发，优化性能和用户体验。",
+                        achievements: [
+                            "重构前端架构，提升加载速度40%",
+                            "主导React技术栈升级，引入TypeScript",
+                            "设计并实现组件库，提高开发效率60%",
+                            "指导团队成员成长，推动技术分享"
+                        ]
+                    },
+                    {
+                        id: 2,
+                        company: "互联网公司B",
+                        position: "前端开发工程师",
+                        period: "2020-2022年",
+                        description: "参与多个重要项目的前端开发，负责页面实现和优化。",
+                        achievements: [
+                            "负责电商平台前端开发，日均访问量超100万",
+                            "优化移动端响应式设计，提高用户满意度",
+                            "开发可视化图表组件，支持业务数据分析",
+                            "修复关键性能问题，减少页面加载时间"
+                        ]
+                    }
+                ],
+                about: {
+                    description: "我是一个热爱技术、追求卓越的开发者。拥有多年的Web开发经验，专注于构建高质量、高性能的应用程序。"
+                }
+            };
+        }
+
+        // 初始化页面
+        function initializePage() {
+            renderSocialLinks();
+            renderSkills();
+            renderProjects();
+            renderExperience();
+
+            // 初始化其他功能
+            initThemeToggle();
+            initScrollAnimations();
+            initSmoothScroll();
+        }
+
+        // 渲染社交链接
+        function renderSocialLinks() {
+            const container = document.getElementById('socialLinks');
+            if (!container || !contentData.social) return;
+
+            container.innerHTML = contentData.social.map(social => `
+                <a href="${social.url}" target="_blank" rel="noopener noreferrer" aria-label="${social.name}">
+                    <i class="${social.icon}"></i>
+                </a>
+            `).join('');
+        }
+
+        // 渲染技能
+        function renderSkills() {
+            const container = document.getElementById('skillsGrid');
+            if (!container || !contentData.skills) return;
+
+            container.innerHTML = contentData.skills.map(category => `
+                <div class="skill-category">
+                    <h3>${category.name}</h3>
+                    ${category.items.map(skill => `
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>${skill.name}</span>
+                                <span>${skill.level}%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%" data-level="${skill.level}"></div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `).join('');
+        }
+
+        // 渲染项目
+        function renderProjects() {
+            const container = document.getElementById('projectsGrid');
+            if (!container || !contentData.projects) return;
+
+            container.innerHTML = contentData.projects.map(project => `
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <div class="project-tech">
+                            ${project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+                        </div>
+                        <div class="project-links">
+                            <a href="${project.github}" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="${project.demo}" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                                演示
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 渲染工作经历
+        function renderExperience() {
+            const container = document.getElementById('experienceTimeline');
+            if (!container || !contentData.experience) return;
+
+            container.innerHTML = contentData.experience.map((exp, index) => `
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>${exp.position}</h3>
+                        <p class="company">${exp.company}</p>
+                        <p class="period">${exp.period}</p>
+                        <p>${exp.description}</p>
+                        <ul>
+                            ${exp.achievements.map(a => `<li>${a}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 主题切换
+        function initThemeToggle() {
+            const toggle = document.getElementById('themeToggle');
+            if (!toggle) return;
+
+            const html = document.documentElement;
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                html.setAttribute('data-theme', 'dark');
+                updateThemeIcon('dark');
+            }
+
+            toggle.addEventListener('click', () => {
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                const newTheme = isDark ? 'light' : 'dark';
+
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateThemeIcon(newTheme);
+            });
+
+            function updateThemeIcon(theme) {
+                const icon = toggle.querySelector('i');
+                if (theme === 'dark') {
+                    icon.className = 'fas fa-sun';
+                } else {
+                    icon.className = 'fas fa-moon';
+                }
+            }
+        }
+
+        // 滚动动画
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+
+                        // 动画技能条
+                        const skillBars = entry.target.querySelectorAll('.skill-progress');
+                        skillBars.forEach(bar => {
+                            const level = bar.getAttribute('data-level');
+                            setTimeout(() => {
+                                bar.style.width = level + '%';
+                            }, 300);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            // 观察所有区域
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(section);
+            });
+
+            // 英雄区域直接显示
+            document.querySelector('.hero').classList.add('visible');
+        }
+
+        // 平滑滚动
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // 导航栏滚动效果
+        function initNavbarScroll() {
+            const navbar = document.querySelector('.navbar');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > 100) {
+                    navbar.style.boxShadow = 'var(--shadow-md)';
+                } else {
+                    navbar.style.boxShadow = 'none';
+                }
+
+                lastScrollY = currentScrollY;
+            });
+        }
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            loadContent();
+            initNavbarScroll();
+        });
+    </script>
+</body>
+</html>
