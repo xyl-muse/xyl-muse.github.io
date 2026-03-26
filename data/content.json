@@ -114,6 +114,15 @@
       "image": "assets/images/projects/personnel-location.jpg",
       "github": "",
       "demo": ""
+    },
+    {
+      "id": 7,
+      "title": "LED轻量级分组密码算法的安全性分析",
+      "description": "本科毕业论文,采用不可能差分分析与积分分析评估LED轻量级分组密码算法的安全性,完成64bit密钥版本软件实现,证实LED算法凭借强扩散结构可有效抵抗两类攻击,安全性良好。",
+      "tech": ["分组密码", "不可能差分分析", "积分分析", "C语言"],
+      "image": "assets/images/projects/thesis.jpg",
+      "github": "",
+      "demo": ""
     }
   ],
   "experience": [
