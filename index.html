@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="谢云龙 - 全栈开发工程师，专注于构建优秀的用户体验和高性能的Web应用">
-    <meta name="keywords" content="全栈开发,前端开发,React,Vue,JavaScript,Node.js">
+    <meta name="description" content="谢云龙 - 信息安全高级工程师，专注于安全体系建设、AI安全和反入侵防御">
+    <meta name="keywords" content="信息安全,网络安全,AI安全,反入侵,SOC,EDR,WAF,IAM">
     <meta name="author" content="谢云龙">
-    <title>谢云龙 | 全栈开发工程师</title>
+    <title>谢云龙 | 信息安全高级工程师</title>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="谢云龙 | 全栈开发工程师">
-    <meta property="og:description" content="热爱技术，专注于构建优秀的用户体验和高性能的Web应用">
+    <meta property="og:title" content="谢云龙 | 信息安全高级工程师">
+    <meta property="og:description" content="4年信息安全经验，具备从0到1的安全体系建设能力，主导AI驱动的安全运营系统建设">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://xyl-muse.github.io">
 
@@ -35,7 +35,8 @@
                 <li><a href="#about">关于</a></li>
                 <li><a href="#skills">技能</a></li>
                 <li><a href="#projects">项目</a></li>
-                <li><a href="#experience">经历</a></li>
+                <li><a href="#experience">工作经历</a></li>
+                <li><a href="#education">教育经历</a></li>
                 <li><a href="#contact">联系</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
@@ -48,8 +49,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>你好，我是<span class="title">谢云龙</span></h1>
-                <p id="hero-description">信息安全高级工程师 | 网络安全专家</p>
+                <h1>你好，我是<span class="title" id="hero-name">谢云龙</span></h1>
+                <p id="hero-title">信息安全高级工程师 | 网络安全专家</p>
+                <p id="hero-description" style="margin: 1rem 0 2rem 0; font-size: 1.125rem; color: var(--text-secondary); max-width: 600px;"></p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-folder-open"></i>
@@ -74,10 +76,9 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>热爱技术，追求卓越</h2>
-                    <p id="about-description">
-                        我是一名具备4年信息安全经验的专业人员，拥有从0到1的信息安全体系设计建设经验，主导了隆基反入侵多层纵深体系建设。
-                    </p>
-                    <p>具备AI驱动的信息安全场景实际落地经验，主导建设多智能体安全运营系统，熟用VibeCoding。我注重业务价值，能挖掘信息安全在实际业务中的价值和应用场景。</p>
+                    <div id="about-description">
+                        <!-- 关于我内容通过JavaScript动态生成 -->
+                    </div>
                     <div class="skills-tags">
                         <span class="skill-tag">安全体系建设</span>
                         <span class="skill-tag">反入侵防御</span>
@@ -126,6 +127,16 @@
         </div>
     </section>
 
+    <!-- 教育经历 -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">教育经历</h2>
+            <div class="timeline" id="educationTimeline">
+                <!-- 教育经历通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
     <!-- 联系方式 -->
     <section id="contact" class="contact">
         <div class="container">
@@ -138,12 +149,12 @@
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <h3>邮箱</h3>
-                        <p>secxie@foxmail.com</p>
+                        <p id="contact-email">galoisfield22@gmail.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>位置</h3>
-                        <p>中国 · 深圳</p>
+                        <p id="contact-location">中国 · 深圳</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-globe"></i>
@@ -239,7 +250,7 @@
                     {
                         id: 1,
                         title: "集团反入侵能力建设及运营",
-                        description: "架构集团多层纵深防御体系,建设运营WAF/NDR/DLP/EDR/SEG/SOC/CAASM等安全组件。",
+                        description: "架构集团多层纵深防御体系,建设运营WAF/NDR/DLP/EDR/SEG/SOC/CAASM等安全组件,成功中断十余次鱼叉攻击,避免项目货款损失超亿元。",
                         tech: ["SOC", "EDR", "WAF", "NDR", "DLP"],
                         image: "assets/images/projects/security-architecture.jpg",
                         github: "",
@@ -248,7 +259,7 @@
                     {
                         id: 2,
                         title: "Metis智能知识采集与分析系统",
-                        description: "设计开发多智能体协作的AI知识采集平台,实现15+数据源的自动化内容捕获、筛选和分析。",
+                        description: "设计开发多智能体协作的AI知识采集平台,通过LangChain编排3个LLM智能体,实现arXiv、freebuf等15+数据源的自动化内容捕获、筛选和分析。",
                         tech: ["FastAPI", "React", "SQLite", "LangChain", "LLM"],
                         image: "assets/images/projects/metis-system.jpg",
                         github: "https://github.com/xyl-muse/metis-knowledge-system",
@@ -257,9 +268,36 @@
                     {
                         id: 3,
                         title: "智能安全运营中心项目(AI-SOC)",
-                        description: "建设AI驱动的安全运营中心,实现告警降噪、自动化处置,降噪率达83.64%。",
+                        description: "建设AI驱动的安全运营中心,使用智能体技术实现告警降噪、自动化处置,降噪率达83.64%,处置率升至100%,MTTR降至2小时。",
                         tech: ["AI-SOC", "智能体工程", "数据可视化"],
                         image: "assets/images/projects/ai-soc.jpg",
+                        github: "",
+                        demo: ""
+                    },
+                    {
+                        id: 4,
+                        title: "集团身份管理体系优化(IDM)",
+                        description: "优化公司身份系统,清理僵尸账号,规范账号管理流程,关停违规账号1898个,新增账号合规率达97.96%,成功更新账号管理体系。",
+                        tech: ["IDM", "身份管理", "数据治理"],
+                        image: "assets/images/projects/idm-optimization.jpg",
+                        github: "",
+                        demo: ""
+                    },
+                    {
+                        id: 5,
+                        title: "统一权限项目-系统权限治理(IAM)",
+                        description: "重构应用系统权限结构,实现基于功能+数据的ABAC权限模型,权限申请时长下降68.40%,单位时效提升317%,超时率下降77.38%。",
+                        tech: ["IAM", "ABAC", "权限治理"],
+                        image: "assets/images/projects/iam-system.jpg",
+                        github: "",
+                        demo: ""
+                    },
+                    {
+                        id: 6,
+                        title: "电池制造中心外来人员定位",
+                        description: "建设UWB定位+摄像头联动的人员动线管理体系,严格控制实验车间人员动线,当年降低实验室保密成本90万元/月度。",
+                        tech: ["UWB定位", "摄像头联动", "保密管理"],
+                        image: "assets/images/projects/personnel-location.jpg",
                         github: "",
                         demo: ""
                     }
@@ -270,13 +308,24 @@
                         company: "隆基绿能科技股份有限公司",
                         position: "信息安全高级工程师",
                         period: "2022.07 至今",
-                        description: "主导集团信息安全反入侵体系建设运营,重点参与工控业务场景的安全需求挖掘及落地。",
+                        description: "主导集团信息安全反入侵体系建设运营,重点参与工控业务场景的安全需求挖掘及落地,负责多层纵深防御体系搭建、AI安全应用落地和安全运营。",
                         achievements: [
-                            "连续4个考核周期绩效均为杰出(1级)",
+                            "定级后连续4个考核周期(2年)绩效均为杰出(1级)",
                             "个人获集团《2023年度数字化之星》",
+                            "作为项目经理,获《集团2023年度优秀数字化项目三等奖》等多个奖项",
                             "主导反入侵团队获《中心2024年度体系能力建设先锋奖》",
-                            "帮助公司降本增效和规避损失超百万"
+                            "重点参与信息安全智能化建设团队获《中心2025年度担当有为奖》",
+                            "在业务领域帮助公司降本增效和规避损失,直接规避金额超百万"
                         ]
+                    }
+                ],
+                education: [
+                    {
+                        id: 1,
+                        school: "西安电子科技大学",
+                        degree: "本科",
+                        major: "信息安全",
+                        period: "2014-2018年"
                     }
                 ],
                 about: {
@@ -287,16 +336,47 @@
 
         // 初始化页面
         function initializePage() {
+            renderHero();
+            renderAbout();
             renderSocialLinks();
             renderSkills();
             renderProjects();
             renderExperience();
+            renderEducation();
             renderResumeDownload();
+            renderContactInfo();
 
             // 初始化其他功能
             initThemeToggle();
             initScrollAnimations();
             initSmoothScroll();
+        }
+
+        // 渲染Hero区域
+        function renderHero() {
+            const nameEl = document.getElementById('hero-name');
+            const titleEl = document.getElementById('hero-title');
+            const descriptionEl = document.getElementById('hero-description');
+
+            if (nameEl && contentData.personal?.name) {
+                nameEl.textContent = contentData.personal.name;
+            }
+            if (titleEl && contentData.personal?.title) {
+                titleEl.textContent = contentData.personal.title;
+            }
+            if (descriptionEl && contentData.personal?.description) {
+                descriptionEl.textContent = contentData.personal.description;
+            }
+        }
+
+        // 渲染关于我区域
+        function renderAbout() {
+            const container = document.getElementById('about-description');
+            if (!container || !contentData.about?.description) return;
+
+            // 将换行符转换为p标签
+            const paragraphs = contentData.about.description.split('\n\n').filter(p => p.trim());
+            container.innerHTML = paragraphs.map(p => `<p>${p}</p>`).join('');
         }
 
         // 渲染简历下载链接
@@ -392,6 +472,35 @@
                     </div>
                 </div>
             `).join('');
+        }
+
+        // 渲染教育经历
+        function renderEducation() {
+            const container = document.getElementById('educationTimeline');
+            if (!container || !contentData.education) return;
+
+            container.innerHTML = contentData.education.map((edu, index) => `
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>${edu.degree} · ${edu.major}</h3>
+                        <p class="company">${edu.school}</p>
+                        <p class="period">${edu.period}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 渲染联系信息
+        function renderContactInfo() {
+            const emailEl = document.getElementById('contact-email');
+            const locationEl = document.getElementById('contact-location');
+
+            if (emailEl && contentData.personal?.email) {
+                emailEl.textContent = contentData.personal.email;
+            }
+            if (locationEl && contentData.personal?.location) {
+                locationEl.textContent = contentData.personal.location;
+            }
         }
 
         // 主题切换
